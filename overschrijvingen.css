@@ -1,0 +1,85 @@
+/* Basisstijl voor het gehele scherm */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f9ff;
+    background-image: url('background.png');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Paneelstijl */
+.panel {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Rekeningoverzicht */
+.rekening-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #33ccff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4ec9e5;
+}
+
+/* Formuliervensters */
+.formulier-venster {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulier-venster.verborgen {
+    display: none;
+}
+
+.formulier-inhoud {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: left;
+}
+
+label, select, input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.succes-afbeelding {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}

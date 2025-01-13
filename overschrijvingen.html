@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financieel Dashboard</title>
+  <link rel="stylesheet" href="overschrijvingen.css">
+</head>
+<body>
+  <div class="panel">
+    <h1>Geld Overmaken</h1>
+    <div id="rekening-overzicht">
+      <div class="rekening-item">
+        <span class="rekening-naam">Hoofdrekening</span>
+        <span class="rekening-saldo">€1500,00</span>
+      </div>
+      <div class="rekening-item">
+        <span class="rekening-naam">Spaargeld</span>
+        <span class="rekening-saldo">€3200,50</span>
+      </div>
+    </div>
+    <button id="open-overdracht">Overmaken</button>
+  </div>
+
+  <!-- Formulier voor het overmaken -->
+  <div id="overdracht-formulier" class="formulier-venster verborgen">
+    <div class="formulier-inhoud">
+      <h3>Geld Overmaken</h3>
+      <label for="rekening-van">Van:</label>
+      <select id="rekening-van">
+        <option value="0">Hoofdrekening</option>
+        <option value="1">Spaargeld</option>
+      </select>
+
+      <label for="rekening-naar">Naar:</label>
+      <select id="rekening-naar">
+        <option value="0">Hoofdrekening</option>
+        <option value="1">Spaargeld</option>
+      </select>
+
+      <label for="bedrag-overdragen">Bedrag:</label>
+      <input type="number" id="bedrag-overdragen" step="0.01" min="0" placeholder="€0,00">
+
+      <button id="bevestig-overdracht">Bevestigen</button>
+      <button id="annuleer-overdracht">Annuleren</button>
+    </div>
+  </div>
+
+  <!-- Succes bevestiging -->
+  <div id="succes-venster" class="formulier-venster verborgen">
+    <div class="formulier-inhoud">
+      <img src="success-image.jpg" alt="Succesvol" class="succes-afbeelding">
+      <h3>Succesvol!</h3>
+      <p>De overschrijving is gelukt.</p>
+      <button id="sluit-sucess">Sluiten</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
