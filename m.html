@@ -1,25 +1,50 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rekeningbeheer Dashboard</title>
-  <link rel="stylesheet" href="m.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactiegeschiedenis</title>
+    <link rel="stylesheet" href="m.css">
 </head>
 <body>
-  <div class="dashboard">
-    <h1>Rekeningbeheer Dashboard</h1>
-    <h2>Uw Rekeningen</h2>
-    <div class="rekening">
-      <span>Betaalrekening</span>
-      <span>€1500,00</span>
+    <div class="container">
+        <h1>Transactiegeschiedenis</h1>
+
+        <!-- Filters sectie -->
+        <div class="filters">
+            <div>
+                <label for="filter-type">Filter op type:</label>
+                <select id="filter-type">
+                    <option value="all">Alle</option>
+                    <option value="inkomend">Inkomend</option>
+                    <option value="uitgaand">Uitgaand</option>
+                </select>
+            </div>
+            <div>
+                <label for="filter-date">Filter op datum:</label>
+                <input type="date" id="filter-date">
+            </div>
+        </div>
+
+        <!-- Transactiegeschiedenis tabel -->
+        <table id="transaction-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Type</th>
+                    <th>Datum</th>
+                    <th>Bedrag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamische transacties worden hier geladen -->
+            </tbody>
+        </table>
+
+        <!-- Lege staat als er geen transacties zijn -->
+        <div class="empty-state" id="empty-state">Geen transacties gevonden.</div>
     </div>
-    <div class="rekening">
-      <span>Spaarrekening</span>
-      <span>€3200,50</span>
-    </div>
-    <button id="nieuweRekening">Nieuwe Rekening Aanmaken</button>
-  </div>
-  <script src="m.js"></script>
+
+    <script src="m.js"></script>
 </body>
 </html>
