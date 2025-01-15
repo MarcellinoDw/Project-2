@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.crypto-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+.crypto-item {
+    background: #dff9fb;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #2d3436;
+}
+
+.transaction-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    margin: 5px 1%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#buy-button {
+    background-color: #27ae60;
+}
+
+#sell-button {
+    background-color: #e74c3c;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#transaction-log {
+    margin-top: 15px;
+    font-size: 1em;
+}
