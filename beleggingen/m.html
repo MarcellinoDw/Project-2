@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beleggingen</title>
+    <link rel="stylesheet" href="m.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Beleggingen</h1>
+        <p>Beschikbaar saldo: <span id="available-balance">€1000.00</span></p>
+
+        <!-- Investeringssectie -->
+        <div class="investment-section">
+            <label for="category-select">Kies een categorie:</label>
+            <select id="category-select">
+                <option value="aandelen">Aandelen</option>
+                <option value="crypto">Cryptocurrencies</option>
+            </select>
+
+            <label for="product-select">Kies een product:</label>
+            <select id="product-select">
+                <option value="techcorp">TechCorp</option>
+                <option value="bitstack">BitStack</option>
+            </select>
+
+            <p>Huidige prijs: <span id="current-price">€120.00</span></p>
+            <p>In bezit: <span id="owned-units">0</span> eenheden</p>
+
+            <label for="amount-input">Bedrag:</label>
+            <input type="number" id="amount-input" placeholder="Bijv. 240">
+
+            <button id="buy-button">Kopen</button>
+            <button id="sell-button">Verkopen</button>
+        </div>
+
+        <!-- Transactielog -->
+        <p id="transaction-log" style="color: red;"></p>
+    </div>
+
+    <script src="m.js"></script>
+</body>
+</html>
